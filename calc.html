@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .main-calci-container{
+            background-color: #142F44;
+            height: 470px;
+            width: 400px;
+            border-radius: 10px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .calci-screen{
+            text-align: right;
+            height: 50px;
+            width: 350px;
+            display: block ;
+            margin: 5px auto;
+            margin-top: 25px;
+            border-radius: 5px;
+            border: solid 0.5px;
+            font-size: 40px;
+            
+        }
+        .button-container{
+            display: flex;
+            flex-direction: column;
+            height: 350px;
+            width: 350px;
+            margin: 15px auto;
+            background-color:#A2BBCF;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        .btn{
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            font-size: 20px;
+            padding: 2px 0;
+            margin: 10px;
+            border:0.5px solid #142F44;
+            border-radius: 5px;
+            
+        }
+        .btn-height{
+            height: 120px;
+        }
+        .bk-color{
+            background-color: #142F44;
+            color:#A2BBCF;
+            border: 0.5px solid black;
+            box-shadow:  inset 1px 0px 20px  #0f2332;
+        }
+        .bg-color{
+            background-color: #d2deee;
+            color:black;
+        }
+        .red{
+            background-color:#D20000;
+            box-shadow:  inset 0px -20px 1px #B00000;
+            border: 0.5px solid white;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class=" main-calci-container">
+        <input value="0" type="text" class=" calci-screen" />
+        <div class="button-container" >
+            
+                <button class="btn bg-color">AC</button>
+                <button class="btn bk-color">7</button>
+                <button class="btn bg-color">4</button>
+                <button class="btn bg-color">1</button>
+                <button class="btn btn-zero red">0</button>
+            
+            <button class="btn bg-color">/</button>
+            <button class="btn bk-color">8</button>
+            <button class="btn bg-color">5</button>
+            <button class="btn bg-color">2</button>
+            
+            <button class="btn bg-color">*</button>
+            <button class="btn bg-color">9</button>
+            <button class="btn bk-color">6</button>
+            <button class="btn bg-color">3</button>
+            <button class="btn bg-color">.</button>
+            
+            <button class="btn bg-color">del</button>
+            <button class="btn bg-color">-</button>
+            <button class="btn btn-height bk-color">+</button>
+            <button class="btn btn-height bk-color">=</button>
+            
+        </div>
+
+
+    </div>
+</body>
+</html>
